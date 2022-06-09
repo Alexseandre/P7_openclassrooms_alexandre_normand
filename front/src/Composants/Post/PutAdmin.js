@@ -14,7 +14,11 @@ export default function PutAdmin(props) {
       method: "DELETE",
       url: `http://localhost:3000/api/delete/post/${props.x.postId}`,
       withCredentials: true,
-    }).catch();
+    })
+      .then((x) => {
+        props.fetch();
+      })
+      .catch();
   };
   const modifyPost = async () => {
     axios({

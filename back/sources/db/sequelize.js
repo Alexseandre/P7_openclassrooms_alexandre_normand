@@ -10,7 +10,7 @@ const bcrypt = require("bcrypt");
 const usersMock = require("./mock-users");
 const PostMock = require("../db/mock-post");
 // *******************************************
-const sequelize = new Sequelize("p7-alex", "root", "", {
+const sequelize = new Sequelize("p7-alex-tryass", "root", "", {
   host: "localhost",
   dialect: "mariadb",
   dialectOptions: {
@@ -25,6 +25,9 @@ const User = UserModel(sequelize, DataTypes);
 const Post = PostModel(sequelize, DataTypes);
 const Like = LikeModel(sequelize, DataTypes);
 // *******************************************
+User.hasMany(Post, { foreignKey: "user_id", onDelete: "CASCADE" });
+Post.belongsTo(User, { as: "user", foreignKey: "user_id" });
+Post.hasMany(Like, { foreignKey: "post_id", as: "Like", onDelete: "CASCADE" });
 
 const initDb = () => {
   return sequelize.sync({ force: true }).then((_) => {

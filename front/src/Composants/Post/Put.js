@@ -9,13 +9,14 @@ export default function Put(props) {
     setToggle(!toggle);
   };
   const deletePost = async () => {
-    alert("Voulez-vous vraiment supprimer votre post?");
     axios({
       method: "DELETE",
       url: `http://localhost:3000/api/delete/post/${props.x.postId}`,
       withCredentials: true,
     })
-      .then((res) => {})
+      .then((res) => {
+        props.fetch();
+      })
       .catch();
   };
   const modifyPost = async () => {

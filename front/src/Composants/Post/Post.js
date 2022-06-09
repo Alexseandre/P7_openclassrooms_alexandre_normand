@@ -45,7 +45,7 @@ export default function Post() {
           <section className="post" key={x.postId}>
             <Avatar user={x.userId} />
             <article className="post-p">
-              {connected.data.admin === 1 || connected.data.id === x.userId ? (
+              {connected.data.admin == 1 || connected.data.id == x.userId ? (
                 <Put connect={connected} fetch={fetchData} x={x} />
               ) : (
                 ""

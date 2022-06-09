@@ -21,9 +21,9 @@ module.exports = (app) => {
         }
       : {
           post: req.body.post,
+          user_id: req.auth.userId,
           userId: req.auth.userId,
           imageUrl: "",
-
         };
     Post.create(postData)
       .then((post) => {
@@ -31,11 +31,13 @@ module.exports = (app) => {
         dataPost = post;
         res.json({ message, data: post });
       })
-      .then((_) => {
+      .then((x) => {
         Like.create({
           userLiked: [],
           postId: dataPost.postId,
+          post_id: dataPost.postId,
           like: 0,
+          user_id: req.auth.userId,
         });
       })
       .catch((error) => {

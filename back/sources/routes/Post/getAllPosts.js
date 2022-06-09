@@ -9,6 +9,7 @@ module.exports = (app) => {
       order: [["postId", "DESC"]],
       limit: limit,
       raw: true,
+      // include: ["comment"],
     })
       .then((users) => {
         const message = "La liste des posts a bien été récupérée.";
