@@ -14,7 +14,6 @@ module.exports = (app) => {
       ? {
           post: req.body.post,
           userId: req.auth.userId,
-
           imageUrl: `${req.protocol}://${req.get("host")}/images/${
             req.file.filename
           }`,

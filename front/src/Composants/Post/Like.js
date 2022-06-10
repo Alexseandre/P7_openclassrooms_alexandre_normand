@@ -56,7 +56,7 @@ export default function Like(props) {
           }
         ></i>
       </div>
-      <p>{dataLike && dataLike.like} like</p>
+      <p className="like-selct">{dataLike && dataLike.like} like</p>
     </div>
   );
 }

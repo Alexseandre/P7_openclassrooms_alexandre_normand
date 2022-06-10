@@ -38,8 +38,11 @@ require("./sources/routes/Post/createPost")(app);
 require("./sources/routes/Post/deletePost")(app);
 require("./sources/routes/Post/updatePost")(app);
 require("./sources/routes/Post/getLike")(app);
+require("./sources/routes/Post/GetComment")(app);
 require("./sources/routes/Post/getAllPosts")(app);
 require("./sources/routes/Post/likePost")(app);
+require("./sources/routes/Post/CreateComment")(app);
+
 // ***********************Auth*******************************************
 require("./sources/routes/Auth/login")(app);
 require("./sources/routes/Auth/getAuth")(app);

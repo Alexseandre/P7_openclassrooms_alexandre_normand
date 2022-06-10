@@ -43,7 +43,6 @@ function App() {
       <UidContext.Provider value={uid}>
         <main>
           <Nav />
-          <div className="container-create"></div>
           <Routes>
             <Route path="/login" element={<Logs />} />
             <Route path="/" element={<Home />} />

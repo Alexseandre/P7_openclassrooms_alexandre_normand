@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 // *******************************************
 const PostModel = require("../models/posts");
 const UserModel = require("../models/user");
-const CommentModel = require("../models/comments");
+const CommentModel = require("../models/Comment.js");
 const LikeModel = require("../models/Like");
 // *******************************************
 const bcrypt = require("bcrypt");
@@ -28,6 +28,11 @@ const Like = LikeModel(sequelize, DataTypes);
 User.hasMany(Post, { foreignKey: "user_id", onDelete: "CASCADE" });
 Post.belongsTo(User, { as: "user", foreignKey: "user_id" });
 Post.hasMany(Like, { foreignKey: "post_id", as: "Like", onDelete: "CASCADE" });
+Post.hasMany(Comment, {
+  foreignKey: "post_id",
+  as: "Comment",
+  onDelete: "CASCADE",
+});
 
 const initDb = () => {
   return sequelize.sync({ force: true }).then((_) => {

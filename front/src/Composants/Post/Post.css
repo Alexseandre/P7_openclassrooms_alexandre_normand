@@ -16,6 +16,7 @@ border-radius: 15px 0px 0px 15px;
   border-radius: 15px;
   padding: 10px 5px;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .post-btn {
@@ -91,10 +92,9 @@ border-radius: 15px 0px 0px 15px;
   }
 }
 @media(max-width:550px) {
-  .comment-div p {
+  .comment-pto {
     display: none;
   }
-  
   .like-div p {
     display: none;
   }
@@ -112,12 +112,7 @@ border-radius: 15px 0px 0px 15px;
    width: 20px;
    margin: 10px;
   }
-  .comment-div {
-    display: flex;
-    margin-bottom: 3px;
-    margin: 10px;
-    width: 20px;
-  }
+
 }
 .connected-post  {
   text-decoration: none;
@@ -156,10 +151,7 @@ transform:  scale(1.02);
 .container-info-supp p {
   margin: 10px;
 }
-.commentaire-input {
-  display: flex;
-  box-shadow: inset 0px .5px 3px rgb(0, 0, 0);
-}
+
 .like-div {
   display: flex;
   justify-content: center;
@@ -167,13 +159,10 @@ transform:  scale(1.02);
 }.like-div:hover {
   cursor: pointer;
 }
-.comment-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.comment-div:hover {
- cursor: pointer;
+
+.fa.fa-comment {
+  color: #4E5166;
+  margin-right: 3px;
 }
 .heartIcone
 {
@@ -212,6 +201,18 @@ transform:  scale(1.02);
 padding: 10px;
 transition: 5s;
 }
-.content-comment > p {
-margin-left: 10px;
+.comment-pto {
+  user-select: none;
+}
+.like-selct 
+ {
+  user-select: none;
  }
+.pseudo-avatar {
+  position: absolute;
+  font-style: italic;
+  color: #4E5166;
+  font-weight: bold;
+  margin-top: -22px;
+  margin-left: 35px;
+}

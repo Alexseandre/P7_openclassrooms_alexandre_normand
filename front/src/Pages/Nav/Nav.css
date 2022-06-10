@@ -39,6 +39,7 @@ text-decoration: none;
 
 .hamburger {
     display: none;
+    margin-right: 10px;
 }
 .navlinks-container a {
     margin: 0 10px;
@@ -76,6 +77,9 @@ text-decoration: none;
     display: none;
 }
 @media(max-width:900px){
+    .barre-de-recherche {
+        order: 3;
+    }
     nav {
         padding: 15px 0px;
         position: relative;
@@ -174,3 +178,62 @@ text-decoration: none;
         font-size: 20px;
     }
 }
+
+@media(max-width:500px) {
+    .tittle-nav {
+        display: none;
+    }
+}
+/* *******************************************/
+.barre-de-recherche {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+
+}
+.input-de-recherche {
+    width: 100%;
+    padding-bottom: 10px;
+    
+}
+.input-de-recherche {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .recherche-a {
+    display: flex;
+    width: 100%;
+  }
+  .try-bdr {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+    border-bottom: solid 2px black;
+    opacity: 0.9;
+  }
+  .img-search {
+    width: 50px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    padding: 10px;
+  }
+  .admin {
+    color: red;
+  }
+  .green {
+    color: green;
+  }
