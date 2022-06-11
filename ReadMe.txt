@@ -14,7 +14,7 @@ Front
 Une fois ces étapes acquises vous pourrez vous rendre sur le front : 
 rendez vous sur le front avec les commandes suivantes : 
 cd front 
-npm i 
+`npm i`
 npm start
 
 Le back-end doit fonctionner sur le port 3000 et le front devrait automatiquement trouver sont port. 
