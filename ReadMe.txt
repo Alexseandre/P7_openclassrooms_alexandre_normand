@@ -1,11 +1,24 @@
-Le projet 7 de groupomania, 
-Back :
-Pour lancer le projet il faudra créer une base de données sql avec Xaamp et le nommer p7-alex-tryass
-ensuite installer les dépendances du back avec npm i puis lancer le back avec npm start sur le port 3000
-Il faut créer un dossier image dans le dossier back 
+Context : Le projet 7 d'openclassRooms Groupomania  est un projet front + back, on devait créer un réseau social avec une base de données SQL. 
+Pour installer correctement le projet vous devez 
+Back-end : 
+Installer Xampp :  - https://www.apachefriends.org/fr/index.html
+Lancer la base de données sur le front panel de Xampp.
+Accèder au panel phpMyAdmin et créeer une base de données avec le nom suivant : p7-alex-tryass.
+Rendez vous dans le dossier back du projet et installer les dépendances avec les commandes suivant : 
+cd back 
+npm i 
+Une fois les dépendances installé vous pourrez lancer le back-end avec la commande suivante :
+npm start 
 
-Front: pour lancer le front il suffit d'installer les dépendance avec npm i puis de lancer react avec npm start
-Le front doit tourner sur le localhost 3001
-Il faut mettre le compte admin sur true pour pouvoir beneficier des droits sur ce compte
- email: "admin@hotmail.fr",
- password: "admin",
+Front
+Une fois ces étapes acquises vous pourrez vous rendre sur le front : 
+rendez vous sur le front avec les commandes suivantes : 
+cd front 
+npm i 
+npm start
+
+Le back-end doit fonctionner sur le port 3000 et le front devrait automatiquement trouver sont port. 
+
+
+
+
