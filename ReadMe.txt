@@ -1,6 +1,6 @@
 Le projet 7 de groupomania, 
 Back :
-Pour lancer le projet il faudra créer une base de données sql avec Xaamp et le nommer p7-alex
+Pour lancer le projet il faudra créer une base de données sql avec Xaamp et le nommer p7-alex-tryass
 ensuite installer les dépendances du back avec npm i puis lancer le back avec npm start sur le port 3000
 Il faut créer un dossier image dans le dossier back 
 
