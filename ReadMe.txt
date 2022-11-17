@@ -1,4 +1,4 @@
-Context : Le projet 7 d'openclassRooms Groupomania  est un projet front + back, on devait créer un réseau social avec une base de données SQL. 
+Context : Le projet 7 d'openclassRooms "Groupamania" a pour but de créer un réseau social avec une base de donnée SQL et framework de notre choix (React JS). 
 Pour installer correctement le projet vous devez 
 Back-end : 
 Installer Xampp :  - https://www.apachefriends.org/fr/index.html
